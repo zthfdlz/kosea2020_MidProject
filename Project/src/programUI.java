@@ -3,6 +3,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+//https://github.com/zthfdlz/kosea2020_MidProject.git
+
 public class programUI extends JFrame {
 	
 	JFrame Book = new JFrame("Book"); // 기본창
@@ -20,6 +22,7 @@ public class programUI extends JFrame {
 	JPanel p2 = new JPanel();
 	JPanel p3 = new JPanel();
 	JPanel p4 = new JPanel();
+	JPanel p5 = new JPanel();
 	
 //	// p1 도서목록 탭 
 //	
@@ -55,20 +58,23 @@ public class programUI extends JFrame {
 		Book.add(login);
 		
 		
-		this.setVisible(true);
+		Book.setVisible(true);
 
 		
 		tabP.add("도서목록", p1);
-		tabP.add("회원정보", p2);
-		tabP.add("도서위치", p3);
-		tabP.add("직원정보", p4);
+		tabP.add("도서대여", p2);
+		tabP.add("회원정보", p3);
+		tabP.add("도서위치", p4);
+		tabP.add("직원정보", p5);
 		
-		add(tabP);
+		setSize(800, 600);
+		
+		Book.add(tabP);
 		
 		
-		setSize(800,600);
 		setLocationRelativeTo(null);
-		this.setVisible(true);
+		tabP.setVisible(true);
+		
 	}
 
 	
